@@ -1,8 +1,14 @@
-const API_KEY = ''; 
-// I need to add in my API key in line above.
-const API_URL = 'https'
-// so I need to put my API URL or not? check. 
+import React from 'react';
+
+const API_KEY = '6d79b581b129d369e1c66f4187141ab8'; 
+const API_URL = 'https://ws.audioscrobbler.com/2.0/';
+
  
+// my api is 6d79b581b129d369e1c66f4187141ab8
+// the shared secret is bc532b5e93a8690503fbe2af6dadf47c
+// callback url http://localhost:3000/callback
+// application homepage http://localhost:3000
+
 
 export const getTopGenres = async () => {
   try {

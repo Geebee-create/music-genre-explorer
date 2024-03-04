@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getTopGenres } from './services/lastfmService';
+import { getTopGenres } from './lastfmService.js';
 
 const App = () => {
   const [genres, setGenres] = useState([]);

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const API_KEY = '6d79b581b129d369e1c66f4187141ab8'; 
 const API_URL = 'https://ws.audioscrobbler.com/2.0/';
 
@@ -10,11 +8,12 @@ const API_URL = 'https://ws.audioscrobbler.com/2.0/';
 // application homepage http://localhost:3000
 
 
+
 export const getTopGenres = async () => {
   try {
     const response = await fetch(`${API_URL}?method=chart.gettoptags&api_key=${API_KEY}&format=json`);
-    // look into above line more and how it works. 
     const data = await response.json();
+
 
     if (response.ok) {
       return data.tags.tag;
@@ -28,4 +27,3 @@ export const getTopGenres = async () => {
   }
 };
 
-// MAKE SURE I ADD IN PROPS FOR THIS FILE.

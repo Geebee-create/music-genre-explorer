@@ -12,33 +12,23 @@ h1 {
   text-align: center;
 }
 
-div.genre-list-container {
+.genre-list-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   overflow-x: auto;
   height: 70vh; /* Adjust the height as needed */
 }
 
-div.genre-item {
-  margin-bottom: 15px; /* Add margin to create space between items */
+.genre-item {
+  margin-right: 15px;
   text-align: center;
 }
 
-img.genre-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-p.genre-name {
+.genre-name {
   margin: 5px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-
- 

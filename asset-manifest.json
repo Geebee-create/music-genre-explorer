@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/music-genre-explorer/static/css/main.e24309e5.css",
-    "main.js": "/music-genre-explorer/static/js/main.5353de40.js",
+    "main.css": "/music-genre-explorer/static/css/main.ca55636c.css",
+    "main.js": "/music-genre-explorer/static/js/main.8f787b78.js",
     "index.html": "/music-genre-explorer/index.html",
-    "main.e24309e5.css.map": "/music-genre-explorer/static/css/main.e24309e5.css.map",
-    "main.5353de40.js.map": "/music-genre-explorer/static/js/main.5353de40.js.map"
+    "main.ca55636c.css.map": "/music-genre-explorer/static/css/main.ca55636c.css.map",
+    "main.8f787b78.js.map": "/music-genre-explorer/static/js/main.8f787b78.js.map"
   },
   "entrypoints": [
-    "static/css/main.e24309e5.css",
-    "static/js/main.5353de40.js"
+    "static/css/main.ca55636c.css",
+    "static/js/main.8f787b78.js"
   ]
 }

@@ -67,7 +67,6 @@ const App = () => {
   return (
     <div>
       <h1>Gina's Music Genre Explorer</h1>
-      <h3>Click on a genre to see song suggestions:</h3>
       {selectedGenre ? (
         // above line. if a genre is selected it renders the details for that genre.
         // {selectedGenre ? ... : ...}: This is a ternary conditional rendering. If selectedGenre is true 
@@ -86,13 +85,17 @@ const App = () => {
           </ul>
         </div>
       ) : (
-        <GenreList genres={genres} onGenreClick={handleGenreClick} />
-        // second set of parentheses shows the genre list if no genre is selected. 
+        <div>
+          <h3>Click on a genre to see song suggestions:</h3>
+          <GenreList genres={genres} onGenreClick={handleGenreClick} />
+        </div>
       )}
     </div>
   );
 };
 
+// second set of parentheses shows the genre list if no genre is selected. 
+// h3 title moved so it will only show on the homepage, not on song rec pages.
 
 export default App;
 

@@ -1,7 +1,6 @@
 const API_KEY = '6d79b581b129d369e1c66f4187141ab8';
 const API_URL = 'https://ws.audioscrobbler.com/2.0/';
 
-
 // my api is 6d79b581b129d369e1c66f4187141ab8
 // the shared secret is bc532b5e93a8690503fbe2af6dadf47c
 // callback url http://localhost:3000/callback

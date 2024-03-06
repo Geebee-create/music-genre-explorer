@@ -1,35 +1,58 @@
 body {
-  background-color: #5d3ba7;
+  background-color: #000000;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-
-h1 {
+  font-family: 'Arial', sans-serif;
   color: #ffffff;
-  text-align: center;
 }
+/* font-family for choosing the font. */
 
+h1,
+h2,
 h3 {
   color: #ffffff;
   text-align: center;
+  margin: 10px 0;
 }
 
 .genre-list-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   overflow-x: auto;
   height: 70vh;
+  padding: 10px;
+  gap: 10px;
 }
-
-/* overflow line is for scroll bar */ 
+/* flex wrap allows the genre names to wrap to the next line where needed. */
+/* justify-content centre. centres the genres horizontally. */
+/* gap adds some space between the genre names. */
 
 .genre-item {
   margin-right: 15px;
   text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+/* cursor pointer adds a pointer. */
+/* transition adds a smooth transition effect. */
+
+
+/* whitespace makes sure text stays on one line. */
+/* overflow hidden hides any content that overflows an element (for example if text is too long) */
+/* text overflow ellipsis- if text overflows, an ellipsis is shown. */
+
+/* img.homepage-image { */
+/* width: 40%; */
+/* max-width: 180px; */
+/* margin: auto; */
+/* } */
+
+.genre-item:hover {
+  transform: scale(1.1);
 }
 
 .genre-name {
@@ -37,14 +60,20 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 
-/* whitespace makes sure text stays on one line. */ 
-/* overflow hidden hides any content that overflows an element (for example if text is too long) */ 
-/* text overflow ellipsis- if text overflows, an ellipsis is shown. */ 
+/* Scrollbar styles. LOOK INTO THESE MORE, HOW THIS WORKS. */
+::-webkit-scrollbar {
+  width: 12px;
+}
 
-/* img.homepage-image { */
-  /* width: 40%; */
-  /* max-width: 180px; */
-  /* margin: auto; */
-/* } */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+/* colour of the track */
